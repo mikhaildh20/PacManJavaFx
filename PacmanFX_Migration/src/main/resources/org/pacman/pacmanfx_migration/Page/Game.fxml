@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pacman.pacmanfx_migration.Pages.GameController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Element/GameBoard.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="GameBoard" fitHeight="1080.0" fitWidth="1977.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Element/GameBoard.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="GameCanvas" layoutX="510.0" layoutY="90.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="900.0" prefWidth="900.0" />
+      <ImageView fx:id="ghost" fitHeight="383.0" fitWidth="371.0" layoutX="39.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" scaleX="-1.0">
+         <image>
+            <Image url="@../Element/pink_ghost.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="difficultyLabel" layoutX="35.0" layoutY="642.0" prefHeight="36.0" prefWidth="364.0" text="-" textFill="WHITE">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="31.0" />
+         </font>
+      </Label>
+      <Label fx:id="score" layoutX="35.0" layoutY="861.0" prefHeight="36.0" prefWidth="378.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="31.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="life1" fitHeight="129.0" fitWidth="127.0" layoutX="1478.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Element/pixel-heart.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="life2" fitHeight="129.0" fitWidth="127.0" layoutX="1605.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Element/pixel-heart.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="life3" fitHeight="129.0" fitWidth="127.0" layoutX="1732.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Element/pixel-heart.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pacmodel" fitHeight="586.0" fitWidth="559.0" layoutX="1418.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Element/stretching_pac.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="GameOverForm" fitHeight="1080.0" fitWidth="1920.0" layoutX="10.0" layoutY="10.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Element/gameover.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtName" layoutX="755.0" layoutY="557.0" onKeyPressed="#OnKeyPress" opacity="0.0" prefHeight="38.0" prefWidth="565.0" style="-fx-background-color: transparent; -fx-background-insets: 0; -fx-border-color: transparent; -fx-border-width: 0; -fx-text-fill: #FFFFFF;">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="34.0" />
+         </font>
+      </TextField>
+      <Label fx:id="FinalScore" layoutX="536.0" layoutY="277.0" prefHeight="86.0" prefWidth="869.0" style="-fx-alignment: CENTER;" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="33.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

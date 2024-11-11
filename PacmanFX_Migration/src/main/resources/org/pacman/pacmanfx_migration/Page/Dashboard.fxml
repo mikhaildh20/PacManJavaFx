@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pacman.pacmanfx_migration.Pages.DashboardController">
+   <children>
+      <ImageView fitHeight="1090.0" fitWidth="1930.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Element/main_menu.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="title" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Element/menu_title.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="play" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Element/play_option.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="leaderboard" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Element/leaderboard_option.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="howtoplay" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Element/htp_option.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="quit" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Element/quit_option.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pacmodel" fitHeight="673.0" fitWidth="778.0" layoutX="1233.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true" scaleX="-1.0">
+         <image>
+            <Image url="@../Element/idlepac.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ghost1" fitHeight="173.0" fitWidth="188.0" layoutX="886.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Element/yellow_ghost.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="play_arrow" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Element/play_arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="leaderboard_arrow" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Element/leaderboard_arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="howtoplay_arrow" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Element/htp_arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="quit_arrow" fitHeight="1080.0" fitWidth="1920.0" layoutX="-2.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Element/quit_arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="htp_page" fitHeight="1080.0" fitWidth="1920.0" layoutX="6.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Element/how_to_play.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="htp_ghost" fitHeight="222.0" fitWidth="216.0" layoutX="715.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Element/cyan_ghost.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="htp_pac" fitHeight="280.0" fitWidth="285.0" layoutX="990.0" layoutY="451.0" pickOnBounds="true" preserveRatio="true" scaleX="-1.0" visible="false">
+         <image>
+            <Image url="@../Element/pacman.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="leaderboard_header" fitHeight="1080.0" fitWidth="1920.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Element/leaderboard_header.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="easy_name1" layoutX="72.0" layoutY="409.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="easy_score1" layoutX="330.0" layoutY="409.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="easy_name2" layoutX="72.0" layoutY="459.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="easy_score2" layoutX="330.0" layoutY="459.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="easy_name3" layoutX="72.0" layoutY="512.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="easy_score3" layoutX="330.0" layoutY="512.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="easy_name4" layoutX="72.0" layoutY="565.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="easy_score4" layoutX="330.0" layoutY="565.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="easy_name5" layoutX="72.0" layoutY="616.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="easy_score5" layoutX="330.0" layoutY="616.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="easy_name6" layoutX="72.0" layoutY="670.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="easy_score6" layoutX="330.0" layoutY="670.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="easy_name7" layoutX="72.0" layoutY="721.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="easy_score7" layoutX="330.0" layoutY="721.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="easy_name8" layoutX="72.0" layoutY="774.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="easy_score8" layoutX="330.0" layoutY="774.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="easy_name9" layoutX="72.0" layoutY="826.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="easy_score9" layoutX="330.0" layoutY="826.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="easy_name10" layoutX="72.0" layoutY="880.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="easy_score10" layoutX="330.0" layoutY="880.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="medium_name1" layoutX="742.0" layoutY="409.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="medium_score1" layoutX="1000.0" layoutY="409.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="medium_name2" layoutX="742.0" layoutY="459.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="medium_score2" layoutX="1000.0" layoutY="459.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="medium_name3" layoutX="742.0" layoutY="512.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="medium_score3" layoutX="1000.0" layoutY="512.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="medium_name4" layoutX="742.0" layoutY="565.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="medium_score4" layoutX="1000.0" layoutY="565.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="medium_name5" layoutX="742.0" layoutY="616.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="medium_score5" layoutX="1000.0" layoutY="616.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="medium_name6" layoutX="742.0" layoutY="670.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="medium_score6" layoutX="1000.0" layoutY="670.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="medium_name7" layoutX="742.0" layoutY="721.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="medium_score7" layoutX="1000.0" layoutY="721.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="medium_name8" layoutX="742.0" layoutY="774.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="medium_score8" layoutX="1000.0" layoutY="774.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="medium_name9" layoutX="742.0" layoutY="826.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="medium_score9" layoutX="1000.0" layoutY="826.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="medium_name10" layoutX="742.0" layoutY="880.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="medium_score10" layoutX="1000.0" layoutY="880.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="hard_name1" layoutX="1472.0" layoutY="409.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="hard_score1" layoutX="1730.0" layoutY="409.0" prefHeight="27.0" prefWidth="172.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="hard_name2" layoutX="1472.0" layoutY="459.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="hard_score2" layoutX="1730.0" layoutY="459.0" prefHeight="27.0" prefWidth="172.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="hard_name3" layoutX="1472.0" layoutY="512.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="hard_score3" layoutX="1730.0" layoutY="512.0" prefHeight="27.0" prefWidth="172.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="hard_name4" layoutX="1472.0" layoutY="565.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="hard_score4" layoutX="1730.0" layoutY="565.0" prefHeight="27.0" prefWidth="172.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="hard_name5" layoutX="1472.0" layoutY="616.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="hard_score5" layoutX="1730.0" layoutY="616.0" prefHeight="27.0" prefWidth="172.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="hard_name6" layoutX="1472.0" layoutY="670.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="hard_score6" layoutX="1730.0" layoutY="670.0" prefHeight="27.0" prefWidth="172.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="hard_name7" layoutX="1472.0" layoutY="721.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="hard_score7" layoutX="1730.0" layoutY="721.0" prefHeight="27.0" prefWidth="172.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="hard_name8" layoutX="1472.0" layoutY="774.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="hard_score8" layoutX="1730.0" layoutY="774.0" prefHeight="27.0" prefWidth="172.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="hard_name9" layoutX="1472.0" layoutY="826.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="hard_score9" layoutX="1730.0" layoutY="826.0" prefHeight="27.0" prefWidth="172.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="hard_name10" layoutX="1472.0" layoutY="880.0" prefHeight="27.0" prefWidth="218.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="hard_score10" layoutX="1730.0" layoutY="880.0" prefHeight="27.0" prefWidth="172.0" text="-" textFill="WHITE" visible="false">
+         <font>
+            <Font name="8BIT WONDER Nominal" size="23.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="red_ghost" fitHeight="182.0" fitWidth="209.0" layoutX="330.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Element/red_ghost.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pink_ghost" fitHeight="143.0" fitWidth="142.0" layoutX="1447.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Element/pink_ghost.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pressX" fitHeight="1090.0" fitWidth="1930.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Element/pressX.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="difficulty_option" fitHeight="1086.0" fitWidth="1930.0" layoutX="5.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Element/difficulty_option.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

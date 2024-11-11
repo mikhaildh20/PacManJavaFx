@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="Canvas" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pacman.pacmanfx_migration.Pages.LoadingController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Element/loading_design.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="PacLeft" fitHeight="196.0" fitWidth="226.0" layoutX="359.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Element/pacman.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="PacRight" fitHeight="196.0" fitWidth="226.0" layoutX="1362.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true" scaleX="-1.0" visible="false">
+         <image>
+            <Image url="@../Element/pacman.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bar1" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Element/bar1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bar2" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Element/bar2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bar3" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Element/bar3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bar4" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Element/bar4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bar5" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Element/bar5.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bar6" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Element/bar6.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bar7" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Element/bar7.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bar8" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Element/bar8.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bar9" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Element/bar9.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bar10" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Element/bar10.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bar11" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Element/bar11.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="EnterTitle" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Element/enter.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="LoadBox" fitHeight="1080.0" fitWidth="1920.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Element/loadbox.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutX="-366.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Element/stars.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutX="1245.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Element/stars.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
